@@ -1,4 +1,4 @@
-package ru.ilyam.dto;
+package ru.ilyam.entity;
 
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import lombok.AllArgsConstructor;
@@ -12,7 +12,7 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 @NoArgsConstructor
 @JsonDeserialize(using = TicketDeserializer.class)
-public class TicketDto {
+public class Ticket {
     private String origin;
     private String originName;
     private String destination;
