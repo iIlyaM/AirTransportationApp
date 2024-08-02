@@ -8,6 +8,6 @@ public class Main {
     public static void main(String[] args) {
         TicketService ticketService = new TicketsListService();
         TicketListHandler ticketListHandler = new TicketListHandler(ticketService);
-        ticketListHandler.handle("tickets_short.json", "VVO", "TLV");
+        ticketListHandler.handle("tickets.json", "VVO", "TLV");
     }
 }
