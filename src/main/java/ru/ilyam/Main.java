@@ -9,5 +9,7 @@ public class Main {
         TicketService ticketService = new TicketsListService();
         TicketListHandler ticketListHandler = new TicketListHandler(ticketService);
         ticketListHandler.handle("tickets.json", "VVO", "TLV");
+
+        System.out.println("Finish!");
     }
 }
